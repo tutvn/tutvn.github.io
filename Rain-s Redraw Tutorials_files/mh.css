@@ -1,0 +1,502 @@
+
+
+
+
+
+/*
+     FILE ARCHIVED ON 21:30:12 thg 3 15, 2015 AND RETRIEVED FROM THE
+     INTERNET ARCHIVE ON 11:53:54 thg 1 5, 2016.
+     JAVASCRIPT APPENDED BY WAYBACK MACHINE, COPYRIGHT INTERNET ARCHIVE.
+
+     ALL OTHER CONTENT MAY ALSO BE PROTECTED BY COPYRIGHT (17 U.S.C.
+     SECTION 108(a)(3)).
+*/
+body{
+    background: #f9f9f9 !important;
+}
+@font-face {
+    font-family: 'OpenSansRegular';
+    src: url('/web/20150315213012/http://www.redhawkscans.com/fonts/opensans-fontfacekit/opensans-regular-webfont.eot');
+    src: url('/web/20150315213012/http://www.redhawkscans.com/fonts/opensans-fontfacekit/opensans-regular-webfont.eot') format('embedded-opentype'),
+         url('/web/20150315213012/http://www.redhawkscans.com/fonts/opensans-fontfacekit/opensans-regular-webfont.woff') format('woff'),
+         url('/web/20150315213012/http://www.redhawkscans.com/fonts/opensans-fontfacekit/opensans-regular-webfont.ttf') format('truetype'),
+         url('/web/20150315213012/http://www.redhawkscans.com/fonts/opensans-fontfacekit/opensans-regular-webfont.svg') format('svg');
+    font-weight: normal;
+    font-style: normal;
+    
+}
+@font-face {
+    font-family: 'OpenSansLight';
+    src: url('/web/20150315213012/http://www.redhawkscans.com/fonts/opensans-fontfacekit/opensans-light-webfont.eot');
+    src: url('/web/20150315213012/http://www.redhawkscans.com/fonts/opensans-fontfacekit/opensans-light-webfont.eot') format('embedded-opentype'),
+         url('/web/20150315213012/http://www.redhawkscans.com/fonts/opensans-fontfacekit/opensans-light-webfont.woff') format('woff'),
+         url('/web/20150315213012/http://www.redhawkscans.com/fonts/opensans-fontfacekit/opensans-light-webfont.ttf') format('truetype'),
+         url('/web/20150315213012/http://www.redhawkscans.com/fonts/opensans-fontfacekit/opensans-light-webfont.svg') format('svg');
+    font-weight: normal;
+    font-style: normal;
+    
+}
+
+@font-face {
+    font-family: 'open_sansbold';
+    src: url('/web/20150315213012/http://www.redhawkscans.com/fonts/opensans-fontfacekit/opensans-bold-webfont.eot');
+    src: url('/web/20150315213012/http://www.redhawkscans.com/fonts/opensans-fontfacekit/opensans-bold-webfont.eot') format('embedded-opentype'),
+         url('/web/20150315213012/http://www.redhawkscans.com/fonts/opensans-fontfacekit/opensans-bold-webfont.woff') format('woff'),
+         url('/web/20150315213012/http://www.redhawkscans.com/fonts/opensans-fontfacekit/opensans-bold-webfont.ttf') format('truetype'),
+         url('/web/20150315213012/http://www.redhawkscans.com/fonts/opensans-fontfacekit/opensans-bold-webfont.svg') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+@font-face {
+    font-family: 'open_sanssemibold';
+    src: url('/web/20150315213012/http://www.redhawkscans.com/fonts/opensans-fontfacekit/opensans-semibold-webfont.eot');
+    src: url('/web/20150315213012/http://www.redhawkscans.com/fonts/opensans-fontfacekit/opensans-semibold-webfont.eot') format('embedded-opentype'),
+         url('/web/20150315213012/http://www.redhawkscans.com/fonts/opensans-fontfacekit/opensans-semibold-webfont.woff') format('woff'),
+         url('/web/20150315213012/http://www.redhawkscans.com/fonts/opensans-fontfacekit/opensans-semibold-webfont.ttf') format('truetype'),
+         url('/web/20150315213012/http://www.redhawkscans.com/fonts/opensans-fontfacekit/opensans-semibold-webfont.svg') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+@font-face {
+    font-family: 'nexa_lightregular';
+    src: url('/web/20150315213012/http://www.redhawkscans.com/fonts/nexa/nexa_light-webfont.eot');
+    src: url('/web/20150315213012/http://www.redhawkscans.com/fonts/nexa/nexa_light-webfont.eot') format('embedded-opentype'),
+         url('/web/20150315213012/http://www.redhawkscans.com/fonts/nexa/nexa_light-webfont.woff') format('woff'),
+         url('/web/20150315213012/http://www.redhawkscans.com/fonts/nexa/nexa_bold-webfont.ttf') format('truetype'),
+         url('/web/20150315213012/http://www.redhawkscans.com/fonts/nexa/nexa_light-webfont.svg') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+@font-face {
+    font-family: 'nexa_boldregular';
+    src: url('/web/20150315213012/http://www.redhawkscans.com/fonts/nexa/nexa_bold-webfont.eot');
+    src: url('/web/20150315213012/http://www.redhawkscans.com/fonts/nexa/nexa_bold-webfont.eot') format('embedded-opentype'),
+         url('/web/20150315213012/http://www.redhawkscans.com/fonts/nexa/nexa_bold-webfont.woff') format('woff'),
+         url('/web/20150315213012/http://www.redhawkscans.com/fonts/nexa/nexa_bold-webfont.ttf') format('truetype'),
+         url('/web/20150315213012/http://www.redhawkscans.com/fonts/nexa/nexa_bold-webfont.svg') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+a{
+    color: #106aa8;
+    font-family: 'OpenSansLight';
+    //font-size: 12px;
+}
+.clear{
+    clear:both;
+}
+ .navbar-fixed-top{
+    min-height: 34px;
+    background: #242424;
+    border: none;
+ }
+ .navbar-fixed-top>.container>ul>li>a{
+    padding: 6px 8px 7px;
+    color: #FFF !important;
+ }
+ .banner{
+    background: url(/web/20150315213012/http://www.redhawkscans.com/img/banner.jpg);
+    min-height: 400px;
+ }
+ .banner .container{
+    margin-top: 33px;
+ }
+ .logo{
+    position: relative;
+ }
+ .logo img{
+    position: absolute;
+    top: -33px;
+    margin-left: 15px;
+    z-index: 9999;
+ }
+ h1{
+    font-family: 'nexa_lightregular' !important;
+    font-size: 30px !important;
+    margin-top: 100px;
+ }
+  h2{
+    font-family: 'OpenSansLight';
+    font-size: 14px;
+    line-height: 30px;
+    margin-top: 0;
+ }
+ nav li a{
+    font-family: 'OpenSansLight';
+    font-size: 14px;
+ }
+ .btn{
+    border: 2px solid #FFF;
+    border-radius: 18px;
+    color: #FFF;
+    font-family: 'open_sansbold';
+    font-size: 14px;
+    padding: 5px 12px;
+    margin-top: 20px;
+ }
+ .search{
+    background: transparent;
+    border: none;
+    border-bottom: 1px solid #0b9e9d;
+    color: #0b9e9d;
+    padding: 10px;
+
+ }
+ ::-webkit-input-placeholder { /* WebKit browsers */
+    color:    #0b9e9d;
+    }
+.glyphicon-search{
+    color: #0b9e9d;
+    margin-left: -26px;
+}
+.log{
+    margin-top: 40px;
+}
+*:focus {
+    outline: none;
+}
+.circ{
+    border: 3px solid #FFF;
+    padding: 12px 14px;
+    border-radius: 34px;
+    margin: 0 5px;
+}
+.glyphicon-log-in{
+    color: #FFF;
+    font-size: 21px;
+}
+.glyphicon-user{
+   color: #FFF;
+    font-size: 21px; 
+}
+.ava{
+    margin-top: 190px;
+}
+.avatar{
+    background: url(/web/20150315213012/http://www.redhawkscans.com/img/ava.jpg);
+    height: 165px;
+    width: 165px;
+    position: relative;
+}
+.avatar2{
+    background: url(/web/20150315213012/http://www.redhawkscans.com/img/ava2.jpg);
+    height: 165px;
+    width: 165px;
+    position: relative;
+    margin-left: 7px;
+}
+.avatar .cap{
+    position: absolute;
+    bottom: 0;
+    background: #a33823;
+    opacity: 0.7;
+    width: 165px;
+}
+.avatar2 .cap{
+    position: absolute;
+    bottom: 0;
+    background: #000;
+    opacity: 0.5;
+    width: 165px;
+}
+.cap p{
+    color: #FFF;
+    text-align: center;
+    margin-top: 10px;
+}
+.social{
+    position: relative;
+    //margin-top: 190px;
+    width: 167px;
+    //height: 200px;
+}
+.tw{
+    position: absolute;
+    bottom: 79px;
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 81px 84px 0 84px;
+    border-color: #10b4b4 transparent transparent transparent;
+}
+.fb{
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 76px 78px 74px 0;
+    border-color: transparent #237dbd transparent transparent;
+    right: 0;
+    position: absolute;
+    bottom: 0;
+}
+.irc{
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 152px 0 0 159px;
+    border-color: transparent transparent transparent #c22525;
+    bottom: -2px;
+    position: absolute;
+}
+.tw span{
+    background: url('/web/20150315213012/http://www.redhawkscans.com/images/social.png') -44px 0px;
+    background-size: 108px 40px;
+    width: 29px;
+    height: 34px;
+    display: inline-block;
+    position: absolute;
+    top: -59px;
+    left: -11px;
+    z-index: 1000;
+}
+.fb span{
+background: url('/web/20150315213012/http://www.redhawkscans.com/images/social.png') -85px 0px;
+background-size: 108px 40px;
+width: 29px;
+height: 34px;
+display: inline-block;
+position: absolute;
+top: -21px;
+left: 31px;
+z-index: 1000;
+}
+.irc span{
+background: url('/web/20150315213012/http://www.redhawkscans.com/images/social.png') -1px 0px;
+background-size: 108px 40px;
+width: 34px;
+height: 34px;
+display: inline-block;
+position: absolute;
+top: -57px;
+left: -105px;
+z-index: 1000;
+}
+/*----------------------------*/
+
+.rh-menu{
+    background: #FFF;
+    margin-bottom: 30px;
+}
+.rh-menu img{
+    margin: 8px 0;
+}
+.rh-menu ul{
+    margin-left: 40px;
+}
+.rh-menu ul li{
+    border-right: 1px solid #EEE;
+}
+.rh-menu ul li a{
+    color: #106aa8 !important;
+    padding: 18px;
+}
+.adv{
+    background: #f7f7f7;
+    border: none;
+    margin:16px 15px;
+    padding-left: 5px;
+    width: 180px;
+}
+
+/*----------------------------*/
+
+.well{
+    background: #FFF;
+    border: 1px solid #e82c0c;
+    font-family: 'OpenSansLight';
+    font-size: 12px;
+    color: #7c7c7c;
+    padding: 15px 10px;
+    margin-bottom: 50px;
+}
+.btn-danger{
+    background: #cd2a28;
+    padding: 11px 19px;
+    margin-top: 9px;
+    border-radius: 4px;
+    width: 45%;
+    font-family: 'nexa_boldregular';
+    font-size: 14px;
+}
+.btn-warning{
+    width: 45%;
+    background: #d7aa35;
+    padding: 11px 19px;
+    margin-top: 9px;
+    border-radius: 4px;
+    margin-left: 10px;
+    font-family: 'nexa_boldregular';
+    font-size: 14px;
+}
+
+.top-list{
+    background: #f0f0f0;
+    color: #808080;
+    font-family: 'nexa_lightregular';
+    font-size: 12px;
+}
+.news{
+    font-size: 18px;
+    font-family: 'nexa_boldregular';
+    color: #cd2a28;
+    margin-top: 0;
+}
+.media{
+    background: #FFF;
+    padding: 10px 20px;
+    margin: 0;
+    border-bottom: 1px solid #f7f7f7;
+}
+.media-heading{
+    color: #cd2a28;
+    font-family: 'nexa_lightregular';
+    font-size: 14px;
+    margin-top: 3px
+}
+.media-body{
+    float: left;
+    width: 35%;
+}
+.media-body p,.media-p p{
+    font-family: 'OpenSansLight';
+    font-size: 12px;
+    color: #7c7c7c;
+    line-height: 17px !important;
+    margin-bottom: 8px;
+}
+.wn{
+    padding-top: 10px;
+    border-top: 1px solid #cd2a28;
+    background: #FFF;
+    margin-top: 20px;
+}
+.start{
+    margin: 0;
+}
+.date{
+    font-size: 10px !important;
+    margin: 0;
+}
+.media-p{
+    float: right;
+    width: 53%;
+}
+.panel-default{
+    border: none;
+}
+.panel-heading{
+    background: #FFF !important;
+}
+.panel-title a{
+    font-family: 'nexa_lightregular';
+    font-size:14px;
+    color: #cd2a28;
+}
+.panel-body{
+    background: #f3f3f3;
+}
+.panel-body section{
+    border-bottom: 1px solid #d5d5d5;
+    padding-bottom: 10px;
+}
+.panel-body .atitle{
+    margin-top: 10px;
+    display: block;
+}
+.panel-body h5{
+    width: 80%;
+}
+.posted{
+    margin-top: 10px;
+    padding-left: 0;
+}
+.posted p{
+    font-family: 'OpenSansRegular';
+    font-size: 12px;
+}
+.top-release{
+    background: #000;
+    width: 262px;
+    height: 327px;
+    padding-left: 0px;
+    position: relative;
+}
+.layer{
+    position: absolute;
+    width: 262px;
+    height: 328px;
+    background: #000;
+    z-index: 9000;
+    opacity: 0.8;
+}
+.top-release img{
+    position: absolute;
+}
+.top-t{
+    z-index: 9999;
+    position: absolute;
+}
+.top-t{
+    bottom: 0;
+    padding: 20px;
+}
+.top-t p{
+    color: #eee;
+    font-family: 'OpenSansLight';
+    margin-top: 10px;
+}
+.top-t a{
+    font-family: 'nexa_boldregular';
+    font-size: 16px;
+    color: #FFF;
+}
+.manga2{
+    width: 52%;
+    padding: 0 0 0 10px;
+}
+.manga2 img{
+    width: 118px;
+    height: 111px;
+}
+.manga2 .media{
+    padding: 0;
+}
+.manga2 .media-body{
+    width: 50%;
+    margin-top: 10px;
+}
+.mr{
+    width: 49%;
+    margin-top: 5px;
+}
+.mr .media-body{
+    width: 100%;
+    padding: 5px;
+}
+.mr img{
+    width: 100%;
+    height: 100%;
+}
+.media-body a{
+    color: #106aa8 !important
+}
+
+footer{
+    background: #0e0e0e;
+}
+footer h4{
+    font-family: 'nexa_lightregular';
+    color: #e82b29;
+    font-size: 18px;
+    margin-top: 20px;
+}
+footer p{
+    font-family: 'OpenSansLight';
+    font-size: 12px;
+    color: #f9f9f9;
+    margin-top: 15px;
+}
